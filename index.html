@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="./index.css">
+
+<body>
+    <div class="container">
+        <h2>Select Card</h2>
+        <div class="main">
+            <img src="./image/mastercard.jpg" class="img1" alt="">
+            <img src="./image/paypal.jpg" class="img2" alt="">
+            <img src="./image/visa.jpg" class="img3" alt="">
+            <img src="./image/amrex.jpg" class="img4" alt="">
+            <img src="./image/discover.jpg" class="img5" alt="">
+        </div>
+        <div>
+            <p>Card Number</p>
+            <input id="input1" type="text">
+        </div>
+        <div class="expiry">
+            <div>
+                <p>Expiry Date</p>
+                <input id="input2" type="month" placeholder="MM/YY">
+            </div>
+            <div class="div3">
+                <p>CVC/CVV</p>
+                <input id="input3" type="password" placeholder="****">
+            </div>
+        </div>
+        <div>
+            <button id="btn" onclick="addCard()">Save</button>
+        </div>
+    </div>
+    <div class="table">
+        <table border="1px" cellpadding="20px">
+            <thead>
+                <tr>
+                    <th>Card Img</th>
+                    <th>Card Number</th>
+                    <th>Expiry Date</th>
+                    <th>CVV</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="body">
+                <tr>
+                    <td>
+                        <img class="img1" src="./image/mastercard.jpg" alt="">
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <button>View</button>
+                        <button>Edit</button>
+                        <button>Delele</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>
